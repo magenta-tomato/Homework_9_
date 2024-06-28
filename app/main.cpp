@@ -5,7 +5,7 @@ int main(int argc, char* argv[])
 {
     int sz = std::stoi(argv[1]);
 
-    Bulk b(sz);
-    b.processLoop();
+    //Bulk b(sz);
+    //b.processLoop();
 
 }
