@@ -4,7 +4,8 @@
 #include <thread>
 #include <mutex>
 #include <iostream>
-#include <fstream
+#include <fstream>
+
 using namespace std;
 #include <condition_variable>
 struct DATA
