@@ -4,9 +4,9 @@
 #include <thread>
 #include <mutex>
 #include <iostream>
-#include <fstream>
+#include <fstream
 using namespace std;
-
+#include <condition_variable>
 struct DATA
 {
 	DATA(string v) : val(v) {}
@@ -93,13 +93,13 @@ private:
 				}
 			}
 		}
-		// больше данных не ожидается
+		// ГЎГ®Г«ГјГёГҐ Г¤Г Г­Г­Г»Гµ Г­ГҐ Г®Г¦ГЁГ¤Г ГҐГІГ±Гї
 		if (!dataAhead && data.empty()) {
 			allStopped = true;
 		}
 	}
 
-	// запись в файл
+	// Г§Г ГЇГЁГ±Гј Гў ГґГ Г©Г«
 	void writeFile( string res )
 	{
 		string fileName = "bulk" + getTime() + ".log";
@@ -115,7 +115,7 @@ private:
 		cout << res << endl;
 	}
 
-	// время
+	// ГўГ°ГҐГ¬Гї
 	string getTime() {
 		using namespace std::chrono;
 		auto cur_time = system_clock::now();
